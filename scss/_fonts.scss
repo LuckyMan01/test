@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeueBoldCondensed.eot');
+    src: local('../fonts/Helvetica Neue Condensed Bold'), local('HelveticaNeueBoldCondensed'),
+        url('../fonts/HelveticaNeueBoldCondensed.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueBoldCondensed.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueBoldCondensed.woff') format('woff'),
+        url('../fonts/HelveticaNeueBoldCondensed.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/HelveticaNeueCyr-Bold.eot');
+    src: local('../fonts/HelveticaNeueCyr-Bold'),
+        url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/HelveticaNeueCyr-Light.eot');
+    src: local('../fonts/HelveticaNeueCyr-Light'),
+        url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/HelveticaNeueCyr-Medium.eot');
+    src: local('../fonts/HelveticaNeueCyr-Medium'),
+        url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/HelveticaNeueCyr-Roman.eot');
+    src: local('../fonts/elveticaNeueCyr-Roman'),
+        url('../fonts/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/HelveticaNeueCyr-BoldItalic.eot');
+    src: local('../fonts/HelveticaNeueCyr-BoldItalic'),
+        url('../fonts/HelveticaNeueCyr-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-BoldItalic.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-BoldItalic.woff') format('woff'),
+        url('../fonts/') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/');
+    src: local('../fonts/HelveticaNeueCyr-UltraLight'),
+        url('../fonts/?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-UltraLight.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-UltraLight.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?9i0vdf');
+    src:  url('../fonts/icomoon.eot?9i0vdf#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?9i0vdf') format('truetype'),
+      url('../fonts/icomoon.woff?9i0vdf') format('woff'),
+      url('../fonts/icomoon.svg?9i0vdf#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-check:before {
+    content: "\f00c";
+  }
+  .icon-sign-in:before {
+    content: "\f090";
+  }
+  .icon-angle-up:before {
+    content: "\f106";
+  }
+  .icon-angle-down:before {
+    content: "\f107";
+  }
+  .icon-level-up:before {
+    content: "\f148";
+  }
+  .icon-level-down:before {
+    content: "\f149";
+  }
+  .icon-automobile:before {
+    content: "\f1b9";
+  }
+  .icon-car:before {
+    content: "\f1b9";
+  }
+  .icon-creative-commons:before {
+    content: "\f25e";
+  }
+  .icon-cross:before {
+    content: "\ea0f";
+  }
+  .icon-loop:before {
+    content: "\ea2d";
+  }
+  

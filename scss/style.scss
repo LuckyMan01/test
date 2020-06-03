@@ -1,0 +1,456 @@
+@import "fonts";
+@import "vars";
+@import "media";
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'HelveticaNeueCyr';
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    background-image: url(../images/img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+ul,li{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container{
+    max-width: 1110px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.header{
+    border-bottom: 1px solid #fcfcfc;
+    padding: 6px 0;
+    background-color: #fff;
+    &__inner{
+        display: flex;
+        align-items: center;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        font-size: 27px;
+        font-weight: 300;
+        padding-right: 70px;
+        img{
+            width: 73px;
+        }    
+    }
+    &__login{
+        margin-left: auto;
+        button{
+            padding: 4px 12px 4px 28px;
+            position: relative;
+            font-size: 15px;
+            line-height: 20px;
+            border:none;
+            background-color: transparent;
+            border: 1px solid rgba($color: $greey, $alpha: .5);
+            border-radius: 3px;
+            &::before{
+                content: '\f090';
+                font-family: 'icomoon';
+                position: absolute;
+                left: 6px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+.menu__list{
+    display: flex;
+    width: 100%;
+    margin-right: auto;
+    li{
+        a{
+            font-size: 14px;
+            transition: all .2s;
+            color: $greey;
+            font-weight: 400;
+            &:hover{
+                color: $red;
+                transition: all .2s;
+            }
+        }
+        &:first-child{
+            a{
+                color: #000;
+            }
+        }
+    }
+    
+    li + li{
+        margin-left: 18px;
+    }
+}
+
+.island__inner{
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 3px 4px -3px rgba(0,0,0,.3);
+    margin: 30px 0 0 30px;
+    border: 1px solid #fcfcfc;
+    max-width: 642px;
+    background-color: #fff;
+    padding-bottom: 22px;
+    span{
+        color: $greey;
+    }
+    .island__inner-wrrap{
+        padding: 10px;
+    }
+    form{
+        padding: 26px 24px 0px;
+        margin-bottom: 13px;
+        input{
+            border: none;
+            border: 1px solid rgba($color: $greey, $alpha: .5);
+            padding: 6px 30px 6px 5px;
+            &:hover{
+                border-color: $greey;
+            }
+            &:focus{
+                border: 1px transparent;
+                border: 1px solid $bg;
+                outline-color:transparent;
+                border-radius: 0;
+                padding: 6px 30px 6px 5px;
+                outline-width: 0;
+            }
+        }
+        button{
+            border: none;
+            background-color: transparent;
+            border: 1px solid rgba($color: $greey, $alpha: .5);
+        }
+        .svap{
+            max-width: 36px;
+            width: 100%;
+            border-right: none;
+            border-left: none;
+            position: relative;
+            &:active{
+                &:focus{
+                    border: 1px transparent;
+                    border: 1px solid $bg;
+                    outline-color:transparent;
+                    border-radius: 0;
+                    outline-width: 0;
+                }
+                &::before{
+                    transform: rotate(-90deg) translateY(-2px);
+                }
+                &::after{
+                    transform: rotate(90deg) translateY(-2px);
+                }
+            }
+            &::before{
+                content: '\f148';
+                position: absolute;
+                font-family: 'icomoon';
+                transform: rotate(-90deg);
+                top: 0;
+                right: 7px;
+                font-size: 18px;
+            }
+            &::after{
+                content: '\f148';
+                position: absolute;
+                font-size: 18px;
+                font-family: 'icomoon';
+                transform: rotate(90deg);
+                bottom: 0;
+                left: 7px;
+            }
+        }
+    }
+}
+.serch{
+    display: flex;
+    input{
+        display: flex;
+        max-width: 278px;
+        width: 100%;
+    }
+    label{
+        width: 100%;
+        position: relative;
+        span{
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 28px;
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg{
+                fill: rgba($color: $greey, $alpha: .5);
+                &:hover{
+                    fill:#000;
+                    transition: all .2s;
+                }
+            }
+        }
+    }
+    
+}
+.island__link{
+    text-align: right;
+    margin-top: 10px;
+    a{
+        color: #04b;
+        &:last-child{
+            margin-left: 10px;
+        }
+        &:hover{
+            color: $red;
+        }
+    }
+}
+.island__clearfix{
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input{
+        max-width: 146px;
+    }
+    button{
+        text-align: left;
+        padding-left: 10px;
+    }
+    .island__dropdown-closed{
+        max-width: 162px;
+        width: 100%;
+        height: 28px;
+        border: none;
+        background-color: #f6f5f3;
+        border-radius: 3px;
+        padding-left: 30px;
+        position: relative;
+        &::before{
+            content: '\f1b9';
+            position: absolute;
+            color: $greey;
+            left: 10px;
+            font-family: 'icomoon';
+        }
+        &::after{
+            content: '\f107';
+            position: absolute;
+            color: $greey;
+            right: 10px;
+            font-size: 18px;
+            font-family: 'icomoon';
+            top: 4px;
+            height: 15px;
+        }
+    }
+    .island__dropdown{
+        max-width: 210px;
+        width: 100%;
+        height: 28px;
+    }
+}
+.island__dropdown-item,
+.island__dropdown-item-two,
+.dropdown__price-item-one,
+.dropdown__price-item-two{
+    color: #000 !important;
+}
+.off{
+    display: none;
+}
+.off__before{
+    &::before{
+        display: none;
+    }
+}
+.dropdown__price{
+    max-width: 185px;
+    width: 100%;
+    height: 42px;
+    text-align: left;
+    padding-left: 10px;
+}
+.island__dropdown,
+.dropdown__price{
+    position: relative;
+    border-radius: 3px;
+    &:hover{
+        border: 1px solid $greey;
+    }
+    &:focus{
+        border: 1px transparent;
+        border: 1px solid $greey;
+        outline-color:transparent;
+        border-radius: 0;
+        outline-width: 0;
+    }
+    &:active{
+        &::before{
+            content: '\f107';
+            font-family: 'icomoon';
+            position: absolute;
+            right: 10px;
+            transform: rotateX(180deg);
+            transition: all .2s;
+        }
+    }
+    &::before{
+        content: '\f107';
+        font-family: 'icomoon';
+        position: absolute;
+        right: 10px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15px;
+    }
+    &-list{
+        transition: all .2s;
+        max-width: 210px;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        z-index: 2;
+        bottom: -55px;
+        box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 3px 4px -3px rgba(0,0,0,.3);
+        li{
+            background-color: $bg;
+            padding: 5px 5px 5px 25px;
+            &:hover{
+                background-color: $bg;
+            }
+        }
+        .off__before{
+            background-color: transparent;
+            &::before{
+                display: none;
+            }
+        }
+        .island__dropdown-one,
+        .island__dropdown-two,
+        .dropdown__price-one,
+        .dropdown__price-two{
+            position: relative;
+            &::before{
+                content: '\f00c';
+                position: absolute;
+                font-family: 'icomoon';
+                left: 10px;
+            }
+        }
+    }
+}
+.island__control{
+    margin: 20px 0;;
+    a{
+        color: $greey;
+        margin-right: 32px;
+        padding: 0 13px;
+        height: 28px;
+        &:hover{
+            color:$red;
+        }
+    }
+    button{
+        color: $greey;
+        border:none !important;
+        &:hover{
+            color:$red;
+        }
+        &:focus{
+            border: 1px transparent;
+            outline-color:transparent;
+            border-radius: 0;
+            outline-width: 0;
+        }
+    }
+    input{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+.island__btm-inner{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .island-btn{
+        max-width: 167px;
+        width: 100%;
+        height: 42px;
+        border: none ;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 3px;
+        background-color: $bg;
+        &:focus{
+            border: 0px transparent;
+            outline-color:transparent;
+            border-radius: 0;
+            outline-width: 0;
+        }
+    }
+}
+.footer{
+    &__inner{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.footer__link{
+  &-list{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li{
+          margin-right: 10px;
+      }
+      li + li{
+          margin-left: 10px;
+      }
+  }  
+}

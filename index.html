@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__logo">
+                            <a href="#">
+                                <img src="images/yandex_PNG22.png" alt="">
+                            </a>
+                            <span>Таксі</span>
+                        </div>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li>
+                                    <a href="#">Замовлення таксі</a>
+                                </li>
+                                <li>
+                                    <a href="#">Служба підтримки</a>
+                                </li>
+                                <li>
+                                    <a href="#">Як стати партнером</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__login">
+                            <button title="Увійти">Увійти</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="island">
+
+                <div class="container">
+                    <div class="island__inner">
+                        <form>
+                            <div class="serch">
+                                <label><input class="island__before" type="text" placeholder="Звідки" required>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                            <g>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M7.988 15.948c-4.383 0-7.937-3.553-7.937-7.937 0-4.383 3.553-7.936 7.937-7.936 4.383 0 7.936 3.553 7.936 7.936 0 4.384-3.553 7.937-7.936 7.937zm2.16-13.335l-2.183 2.826-2.076-2.849c-1.981.767-3.435 2.585-3.679 4.771h2.211v1.185h-2.226c.25 2.746 2.408 4.94 5.138 5.246v-1.918h1.184v1.931c2.79-.252 5.01-2.47 5.265-5.259h-1.946v-1.164h1.933c-.235-2.173-1.664-3.986-3.62-4.769z" />
+                                                <path
+                                                    d="M11.835 7.814h2.115c-.033-.151-.089-.298-.164-.441h-1.951v.441z" />
+                                                <rect x="7.332" y="11.874" width="1.184" height=".509" />
+                                                <path
+                                                    d="M8.517 13.805v.821c2.79-.252 5.01-2.47 5.265-5.259h-.141c-.572 2.393-2.615 4.211-5.124 4.438z" />
+                                                <path
+                                                    d="M2.199 7.362c-.075.143-.131.291-.165.441h2.387v-.441h-2.221z" />
+                                                <path
+                                                    d="M7.988.897c4.244 0 7.7 3.334 7.916 7.525l.021-.411c0-4.383-3.553-7.936-7.936-7.936s-7.937 3.553-7.937 7.936l.021.411c.215-4.191 3.671-7.525 7.916-7.525z" />
+                                                <path
+                                                    d="M7.332 14.615v-.822c-2.451-.275-4.436-2.073-4.998-4.425h-.14c.25 2.746 2.408 4.939 5.138 5.246z" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <button class="svap"></button>
+                                <input class="island__after" type="text" placeholder="Куди" required>
+                            </div>
+                            <div class="island__link">
+                                <a href="#">ТРЦ Океан...</a>
+                                <a href="#">Центральний вокзал Київ-П...</a>
+                            </div>
+                            <div class="island__clearfix">
+                                <button class="island__dropdown">
+                                    <span class="island__dropdown-item">На найблищий час</span>
+                                    <span class="island__dropdown-item-two off">Через 10 хвилин</span>
+                                    <ul class="island__dropdown-list off">
+                                        <li class="island__dropdown-one">На найблищий час</li>
+                                        <li class="island__dropdown-two off__before">Через 10 хвилин</li>
+                                    </ul>
+                                </button>
+                                <button class="island__dropdown-closed" disabled>
+                                    Вимоги
+                                </button>
+                                <input type="tel" placeholder="Телефон" required>
+                            </div>
+                            <div class="island__control">
+                                <a href="#">Тарифи</a>
+                                <button class="island__control-btn">Коментар до замовлення</button>
+                                <input class="island__control-text off" type="text">
+                            </div>
+                            <div class="island__btm-inner">
+                                <button class="island__dropdown-price dropdown__price">
+                                    <span class="dropdown__price-item-one">Економ від 35 грн</span>
+                                    <span class="dropdown__price-item-two off">Business від 35 грн</span>
+                                    <ul class="dropdown__price-list off">
+                                        <li class="dropdown__price-one">Економ від 35 грн</li>
+                                        <li class="dropdown__price-two off__before">Business від 35 грн</li>
+                                    </ul>
+                                </button>
+                                <button class="island-btn" value="1" name="1">Викликати таксі</button>
+                            </div>
+                        </form>
+                        <div class="island__inner-wrrap">
+                            <span>Для розрахунку вартості поїздки заповніть поля «Звідки» і «Куди».</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__link">
+                        <ul class="footer__link-list">
+                            <li><a href="#">Uk</a></li>
+                            <li><a href="#">Про сервіс</a></li>
+                            <li><a href="#">Тарифи</a></li>
+                            <li><a href="#">Служби таксі</a></li>
+                            <li><a href="#">Угода користувача</a></li>
+                            <li><a href="#">Мобільна версія</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__copyright">
+                        <span>© 2020 ООО </span>
+                        <a href="#">«Яндекс»</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/mine.js"></script>
+</body>
+
+</html>
